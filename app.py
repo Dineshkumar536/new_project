@@ -12,8 +12,6 @@ clf = pickle.load(open('nb_clf.pkl', 'rb'))
 cv=pickle.load(open('tfidf_model.pkl','rb'))
 app = Flask(__name__)
 
-# load the spacy english model
-nlp = spacy.load("en_core_web_sm")
 
 #home
 @app.route('/')
